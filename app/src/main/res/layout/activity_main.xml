@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="TESTES"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextNomeId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite seu Nome"
+        android:inputType="textPersonName"
+        android:padding="10sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu Email"
+            android:inputType="textEmailAddress"
+            android:padding="10sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textViewResultadoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Resultado" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clicar"
+        android:padding="10sp"
+        android:text="Enviar" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="limpar"
+        android:padding="10sp"
+        android:text="Limpar" />
+
+    <TextView
+        android:id="@+id/textViewTituloSintomasId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Sintomas"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFebreId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Febre" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDorCabecaId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Dor de cabeça" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDorCorpoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Dor no corpo" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDorOlhoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Dor nos olhos" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDorJuntasId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Dor nas juntas" />
+
+    <Button
+        android:id="@+id/buttonEnviarParaSegundaId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Segunda Tela" />
+
+    <Button
+        android:id="@+id/buttonEnviarParaMapaId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mapa" />
+</LinearLayout>
