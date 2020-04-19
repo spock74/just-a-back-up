@@ -51,10 +51,18 @@ public class MainActivity extends AppCompatActivity {
          *
          */
         buttonEnviarParaSegunda = findViewById(R.id.buttonEnviarParaSegundaId);
-        buttonEnviarParaSegunda.setOnClickListener(new View.OnClickListener(){
+        buttonEnviarParaSegunda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), SegundaActivity.class));
+                Intent intent = new Intent(getApplicationContext(), SegundaActivity.class);
+                // passar dados
+                intent.putExtra("meuNome", "José");
+                intent.putExtra("minhaIdade", 45);
+                // passando um objeto
+                Usuario usuario = new Usuario("Zé", "candongas@foo.bar");
+                intent.putExtra("objetoUsuario", usuario);
+
+                startActivity(intent);
             }
         });
         /**
