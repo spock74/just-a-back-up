@@ -1,4 +1,21 @@
 <resources>
-    <string name="app_name">Componentes Básicos</string>
+    <string name="app_name">Mapa Dengue</string>
     <string name="title_activity_maps">Map</string>
+<!--
+from api demos
+-->
+    <string name="my_location">Minha Localização</string>
+    <string name="my_location_label">Onde Estou</string>
+    <string name="my_location_description">Demonstrates how to use GMS Location.</string>
+    <string name="mylocation_button">Botão Minha Localização</string>
+    <string name="mylocation_layer">Minha Localização Layer</string>
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Access to the location service is required.</string>
+    <string name="location_permission_denied">This sample requires location permission to enabled.</string>
+    <string name="permission_required_toast">Location permission is required.</string>
+
+<!--
+fim from api demos
+-->
 </resources>
